@@ -10,14 +10,21 @@
 
     // Simplificar esta función
     // switch? Object literal? validar posibles colores
+    type FruitColor = 'red'|'yellow'|'purple';
     function getFruitsByColor( color: string ): string[] {
 
-        switch(color){
-            case 'red': return ['manzana','fresa']; 
-            case 'yellow': return ['piña','banana']; 
-            case 'purple': return ['moras','uvas']; 
-            default: throw Error('the color must be: red, yellow, purple');
+        const fruitsByColor = {
+            red:    ['manzana','fresa'],
+            yellow: ['piña','banana'],
+            purple: ['moras','uvas'],
         }
+
+        // switch(color){
+        //     case 'red': return ['manzana','fresa']; 
+        //     case 'yellow': return ['piña','banana']; 
+        //     case 'purple': return ['moras','uvas']; 
+        //     default: throw Error('the color must be: red, yellow, purple');
+        // }
     }
 
     // Simplificar esta función
